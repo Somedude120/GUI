@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF.Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.Application"
+        mc:Ignorable="d"
+        Title="Hello WPF World" Height="350" Width="834.933">
+    <Grid Background="LightBlue" Margin="0,0,80,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="314*"/>
+            <ColumnDefinition Width="325*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="This is life, this is WPF life!" HorizontalAlignment="Left" Margin="46,98,0,0" VerticalAlignment="Top" Width="392" Height="114" Grid.ColumnSpan="3"/>
+        <ListBox HorizontalAlignment="Left" Height="300" Margin="6,10,0,0" VerticalAlignment="Top" Width="309" Grid.Column="2"/>
+
+    </Grid>
+</Window>
