@@ -28,7 +28,7 @@
                 </InlineUIContainer></TextBlock>
 
         </StackPanel>
-        <Image Source="Sailboat.jpg"  Width="247" ></Image>
+        <Image Source="Sailboat.jpg"  Width="247" Margin="0,30,0,24" ></Image>
 
     </StackPanel>
 
