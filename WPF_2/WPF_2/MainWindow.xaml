@@ -6,23 +6,29 @@
         xmlns:local="clr-namespace:WPF_2"
         mc:Ignorable="d"
         Title="Cancer" Height="350" Width="525">
-    
-    <StackPanel Orientation="Horizontal">
-        <StackPanel>
-            <TextBlock Margin = "3">Name: <TextBox x:Name="NameTextBox" Width="100" LostFocus="TextBox_LostFocus"></TextBox></TextBlock>
-            <TextBlock Margin = "3">Length: <TextBox x:Name="LengthBox" Width="50" LostFocus="LengthBox_LostFocus"></TextBox> feet</TextBlock>
-            <Button Margin="3" HorizontalAlignment="Center" Click="Button_Click">Calculate Hull Speed</Button>
-            <TextBlock>
-                <TextBlock>Hull speed: <TextBox x:Name="HullSpeedBox" Margin="3" Width="auto"></TextBox></TextBlock>
-                <InlineUIContainer>
-                    <TextBlock Text="Knots "/>
-                </InlineUIContainer>
-            </TextBlock>
 
-        </StackPanel>
+    <StackPanel Orientation="Horizontal">
         <!--
         <Image x:Name=""></Image>
         -->
+        <StackPanel Width="238">
+            <TextBlock Margin = "3"><Run Text="Name: "/><InlineUIContainer>
+                    <TextBox x:Name="NameTextBox" Width="100" LostFocus="TextBox_LostFocus"/>
+                </InlineUIContainer></TextBlock>
+            <TextBlock Margin = "3"><Run Text="Length: "/><InlineUIContainer>
+                    <TextBox x:Name="LengthBox" Width="50" LostFocus="LengthBox_LostFocus"/>
+                </InlineUIContainer><Run Text=" feet"/></TextBlock>
+            <Button Margin="3" HorizontalAlignment="Center" Click="Button_Click" Content="Calculate Hull Speed"/>
+            <TextBlock><InlineUIContainer>
+                    <TextBlock><Run Text="Hull speed: "/><InlineUIContainer>
+                            <TextBox x:Name="HullSpeedBox" Margin="3" Width="auto"/>
+                        </InlineUIContainer></TextBlock>
+                </InlineUIContainer><Run Text=" "/><InlineUIContainer>
+                    <TextBlock Text="Knots "/>
+                </InlineUIContainer></TextBlock>
+
+        </StackPanel>
+        <Image Source="Sailboat.jpg"  Width="247" ></Image>
 
     </StackPanel>
 
