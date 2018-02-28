@@ -22,5 +22,4 @@ public class Sailboat
     {
         return 1.34 * System.Math.Sqrt(Length);
     }
-
 }

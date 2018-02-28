@@ -11,7 +11,7 @@
         <!--
         <Image x:Name=""></Image>
         -->
-        <StackPanel Width="238">
+        <StackPanel x:Name="FirstStack" Width="238">
             <TextBlock Margin = "3"><Run Text="Name: "/><InlineUIContainer>
                     <TextBox x:Name="NameTextBox" Width="100" LostFocus="TextBox_LostFocus"/>
                 </InlineUIContainer></TextBlock>
@@ -21,14 +21,21 @@
             <Button Margin="3" HorizontalAlignment="Center" Click="Button_Click" Content="Calculate Hull Speed"/>
             <TextBlock><InlineUIContainer>
                     <TextBlock><Run Text="Hull speed: "/><InlineUIContainer>
-                            <TextBox x:Name="HullSpeedBox" Margin="3" Width="auto"/>
+                            <TextBox x:Name="HullSpeedBox" Margin="3" Width="33" Height="15"/>
                         </InlineUIContainer></TextBlock>
                 </InlineUIContainer><Run Text=" "/><InlineUIContainer>
                     <TextBlock Text="Knots "/>
                 </InlineUIContainer></TextBlock>
 
+
         </StackPanel>
-        <Image Source="Sailboat.jpg"  Width="247" Margin="0,30,0,24" ></Image>
+        <Image Source="Sailboat.jpg" >
+            <Image.RenderTransform>
+                <ScaleTransform x:Name="scale" ScaleX="1" ScaleY="1"
+                            CenterX="0.5" CenterY="0.5" />
+            </Image.RenderTransform>
+        </Image>
+
 
     </StackPanel>
 
